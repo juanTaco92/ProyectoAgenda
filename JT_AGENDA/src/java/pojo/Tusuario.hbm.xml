@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/06/2016 19:23:38 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Tusuario" table="TUSUARIO" schema="PROYECTOINTEGRADOR" optimistic-lock="version">
+        <id name="codigousuario" type="big_decimal">
+            <column name="CODIGOUSUARIO" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="50" />
+        </property>
+        <property name="apellidopaterno" type="string">
+            <column name="APELLIDOPATERNO" length="50" />
+        </property>
+        <property name="apellidomaterno" type="string">
+            <column name="APELLIDOMATERNO" length="50" />
+        </property>
+        <property name="correoelectronico" type="string">
+            <column name="CORREOELECTRONICO" length="50" />
+        </property>
+        <property name="contrasena" type="string">
+            <column name="CONTRASENA" length="900" />
+        </property>
+        <property name="fechanacimiento" type="date">
+            <column name="FECHANACIMIENTO" length="7" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="SEXO" length="10" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="TELEFONO" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
